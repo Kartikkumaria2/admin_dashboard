@@ -1,0 +1,225 @@
+body,html{
+    height:100%;
+    margin:0;
+    overflow:hideen;
+    background-color: #60a5fa;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 100%;
+    height:100vh;
+    
+}
+.sidebar{
+    
+    grid-column: 1/2;
+    grid-row:1/2;
+    
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5em 2fr 1fr;
+    background-color: #86efac;
+}
+.sidebar ul{
+    list-style:none;
+    grid-column: 1/2;
+    grid-row:2/3;
+    
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+}
+.sidebar ul>li{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.least{
+    grid-column:1/2;
+    grid-row:3/4;
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+    justify-content: flex-start;
+}
+.most{
+    grid-row:1/2;
+    grid-column: 1/2;
+}
+.main{
+    height:100%;
+    grid-column: 2/3;
+    grid-row:1/2;
+    border-style:double;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr;
+    max-height: 100%;
+    
+}
+.upper{
+    grid-column: 1/2;
+    grid-row:1/2;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+.lower{
+    grid-column:1/2; 
+    grid-row: 2/3;
+    padding-top:2%;
+    padding-right:min(20px,30%);
+    padding-bottom: 2%;
+    padding-left:5px;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "left right";
+    background-color: white;
+}
+.left{
+    grid-row:1/2;
+    grid-column:1/2;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2.25em 1fr;
+}
+.left h3,.right h3:nth-child(1){
+    height:min-content;
+    grid-row:1/2;
+    grid-column: 1/2;
+    align-items: center;
+    justify-content: center;
+    margin:0.25em;
+    
+}
+.right{
+    grid-area: "right";
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2.25em 20em 2.25em 19em;
+    background-color: rgb(64, 58, 58);
+}
+.cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(18em  ,1fr));
+    grid-template-rows: repeat(auto-fit,minmax(3rem,12rem));
+    
+    
+    gap:1em;
+    
+    
+}
+.card-item{
+
+    height:100%;
+    width:100%;
+    min-width: 40px;
+    min-height: 40px;
+    box-shadow: 2px 2px blanchedalmond;
+    border-left:5px solid yellow;
+    
+}
+.announcements{
+    padding:1em;
+    display:flex;
+    flex-direction: column;
+}
+.announcements p {
+    height:min-content;
+    margin:0.25em;
+    border-bottom: 2px;
+    color:white;
+}
+.announcements h4{
+    color:white;
+}
+h4{
+    margin:0.25em;
+}
+img{
+    height:min-content;
+    height:min(50px,3em);
+    border-radius: 50%;
+}
+.trending{
+    grid-row:4/5;
+    grid-column:1/2;
+    display:flex;
+    flex-direction: column;
+    gap:2em;
+    background-color: rgb(64, 58, 58);
+    margin-left:10px;
+    
+}
+.right h3:last-child{
+
+    height:min-content;
+    grid-row:3/4;
+    grid-column: 1/2;
+    align-items: center;
+    justify-content: center;
+    margin:0.25em;
+}
+.trends{
+    display:flex;
+    gap:5px;
+    padding-left:2em;
+    color:white;
+}
+.upper_board{
+    display:flex;
+    gap:2em;
+    justify-content: center;
+    padding-top:1em;
+    
+}
+.upper_board img{
+    height:min(40px,2em);
+}
+input[type="search"]{
+    height:min(40px,3em);
+    width:min(700px,30em);
+}
+.lower_board{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+.lower_board1{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 2fr;
+}
+.lower_board1 img{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    height:50%;
+    width:50%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+}
+.lower_board1 p{
+    font-size:1em;
+}
+.lower_board1 h4{
+    font-size: 20px;
+}
+.lower_board2{
+    grid-row:1/2;
+    grid-column: 2/3;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.lower_board2 button{
+    width:min(80px,10rem);
+}
+
+textarea{
+    height:100%;
+    width:100%;
+}
