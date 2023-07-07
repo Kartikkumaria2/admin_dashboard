@@ -76,7 +76,8 @@ body,html{
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 100%;
     grid-template-areas: "left right";
-    background-color: white;
+    background-color: rgb(64, 58, 58);
+    
 }
 .left{
     grid-row:1/2;
