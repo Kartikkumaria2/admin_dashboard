@@ -2,7 +2,7 @@ body,html{
     height:100%;
     margin:0;
     overflow:hideen;
-    background-color: #60a5fa;
+    background-color: rgb(64, 58, 58);
 }
 .container{
     display:grid;
@@ -64,6 +64,7 @@ body,html{
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
+    background-color: #60a5fa;
 }
 .lower{
     grid-column:1/2; 
@@ -126,6 +127,7 @@ body,html{
     padding:1em;
     display:flex;
     flex-direction: column;
+    overflow: scroll;
 }
 .announcements p {
     height:min-content;
